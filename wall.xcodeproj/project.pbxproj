@@ -13,6 +13,9 @@
 		3646A3B92767D596002BBF6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3646A3B82767D596002BBF6F /* Preview Assets.xcassets */; };
 		3646A3C22767D5C0002BBF6F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646A3C12767D5C0002BBF6F /* CustomTextField.swift */; };
 		3646A3C52767D882002BBF6F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646A3C42767D882002BBF6F /* Helper.swift */; };
+		367D34D0276A76CA00F67F5A /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34CF276A76CA00F67F5A /* ListController.swift */; };
+		367D34D3276A76F100F67F5A /* WordListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34D2276A76F100F67F5A /* WordListItemView.swift */; };
+		367D34D6276A869D00F67F5A /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34D5276A869D00F67F5A /* Extension+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3646A3BA2767D596002BBF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3646A3C12767D5C0002BBF6F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3646A3C42767D882002BBF6F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		367D34CF276A76CA00F67F5A /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		367D34D2276A76F100F67F5A /* WordListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListItemView.swift; sourceTree = "<group>"; };
+		367D34D5276A869D00F67F5A /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,11 @@
 		3646A3B02767D594002BBF6F /* wall */ = {
 			isa = PBXGroup;
 			children = (
-				3646A3C32767D877002BBF6F /* Helper */,
+				367D34D8276A8F1C00F67F5A /* Application */,
+				367D34D9276A8FE700F67F5A /* Extensions */,
 				3646A3C02767D5B7002BBF6F /* View */,
-				3646A3B12767D594002BBF6F /* wallApp.swift */,
-				3646A3B32767D594002BBF6F /* LoginController.swift */,
+				367D34CC276A769E00F67F5A /* Controller */,
+				3646A3C32767D877002BBF6F /* Helper */,
 				3646A3B52767D596002BBF6F /* Assets.xcassets */,
 				3646A3BA2767D596002BBF6F /* Info.plist */,
 				3646A3B72767D596002BBF6F /* Preview Content */,
@@ -78,7 +85,7 @@
 		3646A3C02767D5B7002BBF6F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3646A3C12767D5C0002BBF6F /* CustomTextField.swift */,
+				367D34D7276A8F0B00F67F5A /* CustomTextField */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,6 +96,64 @@
 				3646A3C42767D882002BBF6F /* Helper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		367D34CC276A769E00F67F5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				367D34CE276A76B700F67F5A /* List */,
+				367D34CD276A76AB00F67F5A /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		367D34CD276A76AB00F67F5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3646A3B32767D594002BBF6F /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		367D34CE276A76B700F67F5A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				367D34D1276A76D500F67F5A /* Cell */,
+				367D34CF276A76CA00F67F5A /* ListController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		367D34D1276A76D500F67F5A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				367D34D2276A76F100F67F5A /* WordListItemView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		367D34D7276A8F0B00F67F5A /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3646A3C12767D5C0002BBF6F /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		367D34D8276A8F1C00F67F5A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3646A3B12767D594002BBF6F /* wallApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		367D34D9276A8FE700F67F5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				367D34D5276A869D00F67F5A /* Extension+View.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3646A3B42767D594002BBF6F /* LoginController.swift in Sources */,
+				367D34D0276A76CA00F67F5A /* ListController.swift in Sources */,
 				3646A3B22767D594002BBF6F /* wallApp.swift in Sources */,
+				367D34D3276A76F100F67F5A /* WordListItemView.swift in Sources */,
+				367D34D6276A869D00F67F5A /* Extension+View.swift in Sources */,
 				3646A3C22767D5C0002BBF6F /* CustomTextField.swift in Sources */,
 				3646A3C52767D882002BBF6F /* Helper.swift in Sources */,
 			);

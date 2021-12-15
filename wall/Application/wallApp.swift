@@ -11,7 +11,7 @@ import SwiftUI
 struct wallApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginController()
+            ListController()
         }
     }
 }
