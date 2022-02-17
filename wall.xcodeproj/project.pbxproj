@@ -13,6 +13,8 @@
 		3646A3B92767D596002BBF6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3646A3B82767D596002BBF6F /* Preview Assets.xcassets */; };
 		3646A3C22767D5C0002BBF6F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646A3C12767D5C0002BBF6F /* CustomTextField.swift */; };
 		3646A3C52767D882002BBF6F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646A3C42767D882002BBF6F /* Helper.swift */; };
+		365703DF27A8865200A8A2D0 /* AddNewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365703DE27A8865200A8A2D0 /* AddNewItemController.swift */; };
+		365703E227A88AFD00A8A2D0 /* UpdateItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365703E127A88AFD00A8A2D0 /* UpdateItemController.swift */; };
 		367D34D0276A76CA00F67F5A /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34CF276A76CA00F67F5A /* ListController.swift */; };
 		367D34D3276A76F100F67F5A /* WordListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34D2276A76F100F67F5A /* WordListItemView.swift */; };
 		367D34D6276A869D00F67F5A /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367D34D5276A869D00F67F5A /* Extension+View.swift */; };
@@ -27,6 +29,8 @@
 		3646A3BA2767D596002BBF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3646A3C12767D5C0002BBF6F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3646A3C42767D882002BBF6F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		365703DE27A8865200A8A2D0 /* AddNewItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemController.swift; sourceTree = "<group>"; };
+		365703E127A88AFD00A8A2D0 /* UpdateItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateItemController.swift; sourceTree = "<group>"; };
 		367D34CF276A76CA00F67F5A /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		367D34D2276A76F100F67F5A /* WordListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListItemView.swift; sourceTree = "<group>"; };
 		367D34D5276A869D00F67F5A /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
@@ -98,9 +102,27 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		365703DD27A8861600A8A2D0 /* AddNewItem */ = {
+			isa = PBXGroup;
+			children = (
+				365703DE27A8865200A8A2D0 /* AddNewItemController.swift */,
+			);
+			path = AddNewItem;
+			sourceTree = "<group>";
+		};
+		365703E027A88AEB00A8A2D0 /* UpdateItem */ = {
+			isa = PBXGroup;
+			children = (
+				365703E127A88AFD00A8A2D0 /* UpdateItemController.swift */,
+			);
+			path = UpdateItem;
+			sourceTree = "<group>";
+		};
 		367D34CC276A769E00F67F5A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				365703E027A88AEB00A8A2D0 /* UpdateItem */,
+				365703DD27A8861600A8A2D0 /* AddNewItem */,
 				367D34CE276A76B700F67F5A /* List */,
 				367D34CD276A76AB00F67F5A /* Login */,
 			);
@@ -225,9 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365703E227A88AFD00A8A2D0 /* UpdateItemController.swift in Sources */,
 				3646A3B42767D594002BBF6F /* LoginController.swift in Sources */,
 				367D34D0276A76CA00F67F5A /* ListController.swift in Sources */,
 				3646A3B22767D594002BBF6F /* wallApp.swift in Sources */,
+				365703DF27A8865200A8A2D0 /* AddNewItemController.swift in Sources */,
 				367D34D3276A76F100F67F5A /* WordListItemView.swift in Sources */,
 				367D34D6276A869D00F67F5A /* Extension+View.swift in Sources */,
 				3646A3C22767D5C0002BBF6F /* CustomTextField.swift in Sources */,
